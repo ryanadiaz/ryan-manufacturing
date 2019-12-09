@@ -1,0 +1,36 @@
+#top-header {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  max-height: 30px;
+}
+
+.top-menu-left {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.top-menu-right {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.top-menu-left li, .top-menu-right li {
+  padding: 0px 15px;
+}
+
+.top-menu-left li a, .top-menu-right li a{
+  color: #fff;
+}
+
+@media ALL and (max-width: 767px) {
+  .top-menu-left {
+    justify-content: center;
+  }
+}
